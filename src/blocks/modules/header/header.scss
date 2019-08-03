@@ -1,28 +1,90 @@
-.icon {
+p {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 67% 33%;
+    font-family: 'Roboto', sans-serif;
+    color: #262f32;
+    background-color: #f3f3f3;
+}
+
+.banner {
+    display: block;
+    background-image: url(../../../img/banner.png);
+}
+
+.header__info {
+    padding: 3.8%;
+}
+
+
+
+.blog-author {
+    font-size: 40px;
+}
+
+.header__title {
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.project {
+    font-size: 40px;
+}
+
+.header__text {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.navigation {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-}
+    justify-content: space-between;
 
-.facebook {
-    background-color: #345bb4;
+    .topnav {
+        display: flex;
 
-    .svg {
-        width: 13px;
+        #myLinks {
+            display: none;
+
+            a {
+                line-height: 35px;
+                margin-right: 20px;
+                color: #262f32;
+                transition-property: color;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    color: #666;
+                }
+            }
+        }
+
+        .icon {
+            color: #262f32;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 12px;
+            transition-property: color;
+            transition-duration: 0.5s;
+
+            .d-none {
+                display: none;
+            }
+
+            i {
+                display: block;
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+
+            &:hover {
+                color: #666;
+            }
+        }
     }
 }
-
-.dribble {
-    background-color: #e64895;
-}
-
-.svg {
-    display: block;
-    fill: rgb(255, 255, 255);
-    width: 25px;
-    height: 25px;
-}
-
