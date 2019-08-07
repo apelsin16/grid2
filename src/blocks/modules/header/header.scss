@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     margin: 0;
 }
@@ -85,5 +89,20 @@ p {
                 color: #666;
             }
         }
+    }
+}
+
+@media (max-width: 880px) {
+    .header__title {
+        font-size: 24px;
+    }
+    .header__text {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 740px) {
+    .header {
+        display: block;
     }
 }
